@@ -1,6 +1,8 @@
 package com.example.fuelcalculator
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -13,27 +15,23 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.fuelcalculator.ui.theme.FuelCalculatorTheme
 
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+
+        val btStart = findViewById<Button>(R.id.bt_start)
+
+        btStart.setOnClickListener {
+            val intent = Intent(this,InputPriceActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
 
 /* -Criar 5 páginas para o aplicativo
-   -Criar a página inicial
-        -Image
-        -Text
-        -Text
-        -Button
-   -Criar 3 páginas para inputs
-    -Input Preço do combustível
-        -Image
-        -Text
-        -Text
-        -input
-        -Button
      -Input Consumo do Carro
         -Image
         -Text

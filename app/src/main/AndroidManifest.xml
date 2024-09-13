@@ -22,9 +22,6 @@
             android:name=".InputPriceActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.theme.InputPrecoActivity"
-            android:exported="false" />
-        <activity
             android:name=".ResultActivity"
             android:exported="false" />
         <activity

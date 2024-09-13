@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
 
-    <style name="Theme.FuelCalculator" parent="android:Theme.Material.Light.NoActionBar" />
+<resources xmlns:tools="http://schemas.android.com/tools">
+<!-- Base application theme. -->
+<style name="Base.Theme.FuelCalculator" parent="Theme.Material3.DayNight.NoActionBar">
+    <item name="colorPrimary">@color/bt_color</item>
+</style>
+
+    <style name="Theme.FuelCalculator" parent="Base.Theme.FuelCalculator"/>
 </resources>
