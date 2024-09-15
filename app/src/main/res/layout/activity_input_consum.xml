@@ -80,10 +80,11 @@
 
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/bt_Next_D"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Próximo"
+        android:layout_margin="16dp"
         app:layout_constraintBottom_toBottomOf="parent" />
 
 

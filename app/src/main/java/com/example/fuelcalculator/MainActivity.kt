@@ -31,19 +31,8 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-/* -Criar 5 páginas para o aplicativo
-     -Input Consumo do Carro
-        -Image
-        -Text
-        -Text
-        -input
-        -Button
-      -Distancia até o destino
-        -Image
-        -Text
-        -Text
-        -input
-        -Button
+/*
+
    -Criar 1 páginas para resultado
         - caixa branca com texto do resultado
         -tela azul
