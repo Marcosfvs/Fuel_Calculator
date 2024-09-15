@@ -38,7 +38,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Preço do Combustível"
-            android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="20dp"
             android:textStyle="bold"
@@ -66,20 +65,23 @@
             android:background="@drawable/rounded_bg"
             android:layout_marginTop="30dp"
             android:layout_marginStart="30dp"
+            app:hintEnabled="false"
             app:layout_constraintTop_toBottomOf="@+id/textView4"
             tools:layout_editor_absoluteX="30dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="350dp"
-                android:layout_height="61dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:hint="Ex.: 6.30" />
+                android:hint="Ex.: 6.30"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"/>
         </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/bt_Next_PC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Próximo"

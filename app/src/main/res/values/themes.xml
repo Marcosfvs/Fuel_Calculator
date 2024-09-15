@@ -4,6 +4,7 @@
 <!-- Base application theme. -->
 <style name="Base.Theme.FuelCalculator" parent="Theme.Material3.DayNight.NoActionBar">
     <item name="colorPrimary">@color/bt_color</item>
+    <item name="statusBarBackground">@color/bt_color</item>
 </style>
 
     <style name="Theme.FuelCalculator" parent="Base.Theme.FuelCalculator"/>
