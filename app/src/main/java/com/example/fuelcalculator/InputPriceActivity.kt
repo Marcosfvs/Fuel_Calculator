@@ -40,8 +40,11 @@ class InputPriceActivity : AppCompatActivity() {
             } else {
                 val numPrice:Float =edtPriceStr.toFloat()
                 println(numPrice)
-                val intent = Intent(this, InputConsumActivity::class.java)
-                intent.putExtra(KEY_PRICE,numPrice)
+
+                val intent = Intent (this,InputConsumActivity::class.java)
+                    .apply {
+                        putExtra(KEY_PRICE, numPrice)
+                    }
                 startActivity(intent)
 
             }

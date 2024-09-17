@@ -8,7 +8,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-    const val KEY_RESULT = "ResultActivity.KEY_PRICE"
+    const val KEY_DIST = "DistValue.KEY_DADOS"
+    const val KEY_CONSUM = "ConsumeValue.KEY_DADOS"
+    const val KEY_PRICE = "PriceValue.KEY_DADOS"
 
 class ResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,11 +22,24 @@ class ResultActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val calculoResult = intent.getFloatExtra(KEY_RESULT,0f)
+        val dadoDist= intent.getFloatExtra(KEY_DIST,0f)
+        val dadoPrice = intent.getFloatExtra(KEY_PRICE, 0f)
+        val dadoConsum = intent.getFloatExtra(KEY_CONSUM,0f)
+        println(dadoPrice)
+        println(dadoConsum)
+        println(dadoDist)
+
+        val lConsum = dadoDist / dadoConsum
+        println(lConsum)
+        val result =  dadoPrice * lConsum
+        println(result)
+
 
         val tvResult = findViewById<TextView>(R.id.tv_result)
-        tvResult.text = calculoResult.toString()
+        tvResult.text = result.toString()
         val btReturn = findViewById<Button>(R.id.bt_Return)
+
+
 
         btReturn.setOnClickListener {
             val intent = Intent(this,MainActivity::class.java)
