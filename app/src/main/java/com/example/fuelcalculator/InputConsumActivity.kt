@@ -38,7 +38,9 @@ class InputConsumActivity : AppCompatActivity() {
                     )
                     .show()
             } else {
+                val numConsum: Float = edtConsumStr.toFloat()
                 val intent = Intent(this,InputDistancActivity::class.java)
+                intent.putExtra(KEY_CONSUM,numConsum)
                 startActivity(intent)
             }
         }
