@@ -70,6 +70,8 @@
             tools:layout_editor_absoluteX="30dp">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_price"
+                android:inputType="numberDecimal"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

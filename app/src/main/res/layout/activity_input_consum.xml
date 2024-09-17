@@ -69,6 +69,8 @@
             tools:layout_editor_absoluteX="1dp">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_consum"
+                android:inputType="numberDecimal"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:hint="5 km/l"
