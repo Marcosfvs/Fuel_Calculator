@@ -10,6 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
 
+
 class InputDistancActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,6 +21,8 @@ class InputDistancActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+
 
         val edtDist = findViewById<TextInputEditText>(R.id.edt_dist)
 
@@ -37,12 +40,15 @@ class InputDistancActivity : AppCompatActivity() {
                     )
                     .show()
             } else {
-                //pegar as informações das outras activity
-
-                val lConsum = edtDist / edtConsum
-                val priceGaso = lConsum * edtPrice
-
-                val intent = Intent(this,ResultActivity::class.java)
+                val numDist: Float = edtDistStr.toFloat()
+                val numPrice = intent.getFloatExtra(KEY_PRICE,0.1f)
+                val numConsum = intent.getFloatExtra(KEY_CONSUM,0.1f)
+                val intent = Intent (this,ResultActivity::class.java)
+                    .apply {
+                        putExtra(KEY_PRICE, numPrice)
+                        putExtra(KEY_CONSUM, numConsum)
+                        putExtra(KEY_DIST,numDist)
+                     }
                 startActivity(intent)
             }
 
