@@ -36,9 +36,16 @@ class ResultActivity : AppCompatActivity() {
 
 
         val tvResult = findViewById<TextView>(R.id.tv_result)
-        tvResult.text = result.toString()
+        tvResult.text = "$" + result.toString()
         val btReturn = findViewById<Button>(R.id.bt_Return)
 
+        val tvPrice = findViewById<TextView>(R.id.tv_price)
+        val tvConsume = findViewById<TextView>(R.id.tv_consume)
+        val tvDist = findViewById<TextView>(R.id.tv_dist)
+
+        tvPrice.text = dadoPrice.toString()
+        tvConsume.text =dadoConsum.toString()
+        tvDist.text =dadoDist.toString()
 
 
         btReturn.setOnClickListener {
