@@ -1,10 +1,13 @@
-# Calculadora IMC
-Desenvolvimento de projeto para criação de um aplicativo Android nativo utilizando a linguaguem de programação Kotlin. Tendo como principal funcionalidade o cálculo do índice de massa corporal (IMC), e apresentação da classificação de acordo com literatura para os graus de obesidade e magreza.
+# Fuel Calculator
+Desenvolvimento de projeto para criação de um aplicativo Android nativo utilizando a linguaguem de programação Kotlin. Tendo como principal funcionalidade o cálculo de valor gasto para determinado automóvel percorrer un determinado percurso.
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-<img src="https://github.com/user-attachments/assets/cf6d2efb-d61d-47af-83ad-2c63aaf2e27e" width=200/>
-<img src="https://github.com/user-attachments/assets/ff22706b-ef81-4eee-a58c-d3f102ae1c47" width=200/>
+<img src="https://github.com/user-attachments/assets/d0aac6fc-08b0-4299-a5ca-f491707f70d2" width=200/>
+<img src="https://github.com/user-attachments/assets/bde986fb-ce02-4b00-a3c3-98a9cd06eda4" width=200/>
+<img src="https://github.com/user-attachments/assets/a8832754-30e9-46db-9d72-533e0adfa5ad" width=200/>
+<img src="https://github.com/user-attachments/assets/5b898663-e352-494e-8449-3daa9aa65684" width=200/>
+<img src="https://github.com/user-attachments/assets/a60a7a6b-d952-4bed-b570-7d8152aea04e" width=200/>
 
 Screenshots
 
